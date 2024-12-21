@@ -1,0 +1,19 @@
+meta {
+  name: My Profile Update
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{base_url}}/api/v1/profiles/me
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM0ODAyMTQ2LCJpYXQiOjE3MzQ4MDAzNDYsImp0aSI6IjFiMjUyYjViYWQ3ZjRlYjRiZTY3MTBlYzlkZmE1MGY4IiwidXNlcl9pZCI6IjM4MDkwNjg5MDEifQ.IHAEjh87wWxnZthOZeg-IIs4arRd0RUuk87v79Khfdg
+}
+
+body:multipart-form {
+  username: dev
+}
