@@ -1,0 +1,24 @@
+meta {
+  name: Calendar Card Update
+  type: http
+  seq: 3
+}
+
+put {
+  url: {{base_url}}/api/v1/calendars/card/3809068901/1
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM0Nzk2MjA1LCJpYXQiOjE3MzQ3OTQ0MDUsImp0aSI6IjYwNjIwNWUxZTJlYjRhNmI4N2JlZjYwZmRhZDEwMWViIiwidXNlcl9pZCI6IjM4MDkwNjg5MDEifQ.KjEqY_jYOXtdxKhmJC-pUtaPXvCC4RUrhBAzFUCEaOU
+}
+
+body:multipart-form {
+  comment: 크리스마스는 설레잖아요.
+  comment_detail: 설레기 때문에 이 설렘으로 크리스마스를 기다려볼래요. 🙈🙉🙊
+  youtube_thumbnail_link: https://img.youtube.com/vi/jwS_UbJ2Geg/maxresdefault.jpg
+  youtube_video_id: jwS_UbJ2Geg
+  title: 성시경, 박효신, 서인국, 빅스(VIXX), 여동생-겨울고백(Winter Propose)
+  ~thumbnail_file: @file(/Users/juhwan.lee/Desktop/screenshot.png)
+}

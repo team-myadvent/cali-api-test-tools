@@ -1,0 +1,15 @@
+meta {
+  name: Youtube Search
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/api/v1/search?q=luther
+  body: none
+  auth: none
+}
+
+params:query {
+  q: luther
+}

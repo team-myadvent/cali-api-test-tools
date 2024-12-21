@@ -1,0 +1,19 @@
+meta {
+  name: Calenar List Export Image
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{base_url}}/api/v1/calendars/3809068901
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM0ODAwNzk5LCJpYXQiOjE3MzQ3OTg5OTksImp0aSI6IjJjNDcxZmNjYTM1ZDRjYWFhYjdiMDJmNDUwNTY4M2QxIiwidXNlcl9pZCI6IjM4MDkwNjg5MDEifQ.AfzsdCm0AJ4JImrTvi2m08uFava1athfuuVCuNf6uCw
+}
+
+body:multipart-form {
+  export_image: @file(/Users/juhwan.lee/Desktop/python-logo-master-v3-TM-flattened.png)
+}

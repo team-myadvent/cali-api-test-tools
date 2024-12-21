@@ -1,0 +1,19 @@
+meta {
+  name: Kakao Login
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base_url}}/api/v1/auth/kakao?code=fv2heLcwBvWa0dAyq5Ai_PmQhsXzmLuKdaKfcshYgA8POp0kLJF4xAAAAAQKPXMYAAABk-oT2IKGtS2__sNdBQ
+  body: none
+  auth: none
+}
+
+params:query {
+  code: fv2heLcwBvWa0dAyq5Ai_PmQhsXzmLuKdaKfcshYgA8POp0kLJF4xAAAAAQKPXMYAAABk-oT2IKGtS2__sNdBQ
+}
+
+headers {
+  Content-Type: application/json
+}

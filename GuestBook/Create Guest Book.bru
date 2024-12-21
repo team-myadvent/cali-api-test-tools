@@ -1,0 +1,20 @@
+meta {
+  name: Create Guest Book
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base_url}}/api/v1/guestbooks/3809068901/1
+  body: multipartForm
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM0Nzk5NTI3LCJpYXQiOjE3MzQ3OTQ0MDUsImp0aSI6IjBjNzRhMjA4NDQ2YjRjYjU5MzkxZmI4NDZmNmFmYzY3IiwidXNlcl9pZCI6IjM4MDkwNjg5MDEifQ.yPxFTqQJoJvZOwsQ0WfXSsggvI4G0JV1bsTSXLwiczU
+}
+
+body:multipart-form {
+  content: 테스트
+  ~writer_name: 주환12
+}
